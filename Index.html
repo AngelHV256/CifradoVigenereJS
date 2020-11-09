@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vigenerecd.js"></script>
+    <title>Cifrado Vigenere</title>
+</head>
+<link rel="stylesheet" href="estilos.css">
+<body>
+    <form class="formVigenere">
+        <span class="h1v">Mensaje</span>
+        <br />
+        <input class="TextV" id="InputText" type="text"></input><br />
+        <span class="h1v">Clave</span><br /><br/>
+        <input class="TextV" id="PassWord" type="text" /><br />
+        <br />
+        <input class="ButtonV" id="Encrypt" onclick="RebuildString(Encriptar(true))" type="button" value="Encriptar" /><br />
+        <br />
+        <input class="ButtonV" id="UnEncrypt" onclick="RebuildString(Encriptar(false))" type="button" value="Desencriptar" /><br />
+        <br />
+        <span class="h1v">Nuevo Mensaje</span>
+        <textarea class="textareaV" id="Result" rows="5"></textarea><br/><br/>
+        </form>
+</body>
+</html>
