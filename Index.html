@@ -8,18 +8,18 @@
 </head>
 <link rel="stylesheet" href="estilos.css">
 <body>
+    <span class="titleV"><h1>Cifrado Vigenere</h1>></span>
     <form class="formVigenere">
-        <span class="h1v">Mensaje</span>
-        <br />
+        <span class="h1v"><h2>Mensaje</h2><h5>***Solo LETRAS (MAY/minus) del alfabeto español***</h5></span>
         <input class="TextV" id="InputText" type="text"></input><br />
-        <span class="h1v">Clave</span><br /><br/>
+        <span class="h1v"><h2>Clave<h5>***Solo LETRAS (MAY/minus) del alfabeto español***</h5></h2></span>
         <input class="TextV" id="PassWord" type="text" /><br />
         <br />
         <input class="ButtonV" id="Encrypt" onclick="RebuildString(Encriptar(true))" type="button" value="Encriptar" /><br />
         <br />
         <input class="ButtonV" id="UnEncrypt" onclick="RebuildString(Encriptar(false))" type="button" value="Desencriptar" /><br />
         <br />
-        <span class="h1v">Nuevo Mensaje</span>
+        <span class="h1v"><h2>Nuevo Mensaje</h2></span>
         <textarea class="textareaV" id="Result" rows="5"></textarea><br/><br/>
         </form>
 </body>
